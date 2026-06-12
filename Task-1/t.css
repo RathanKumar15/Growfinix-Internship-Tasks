@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+  font-family:'Poppins', sans-serif;
+}
+body{
+  background:#f5f5f5;
+  color:#111;
+
+}
+body.dark{
+  background:#0f172a;
+  color:white;
+}
+header{
+  display:flex;
+  justify-content:space-between;
+  padding: 30px 10%;
+  position:sticky;
+  top:0;
+  background-color: rgba(255,255,255,0.1);
+  /* background-color: rgb(67, 66, 65); */
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+.logo{
+  font-size:xx-large;
+  font-weight: bolder;
+}
+
+nav a{
+
+  text-decoration: none;
+  color:inherit;
+  padding: 10px;
+  margin:10px;
+  font-size:large;
+  font-weight:normal;
+}
+nav{
+  margin-top: 12px;
+}
+nav a:hover{
+  color:aqua;
+  transform:scale(1.1)
+}
+
+#theme{
+  height: 50px;
+  width:40px;
+  border-radius: 50%;
+  background-color: aqua;
+  border:none;
+  cursor: pointer;
+  color:#f5f5f5;
+  padding: 12px;
+  transition: 0.3s;
+}
+#theme:hover{
+  transform: scale(1.1);
+}
+.hero{
+  justify-content: space-around;
+  display: flex;
+  margin: 120px;
+
+
+}
+img{
+  height: 450px;
+  width: 320px;
+  border-radius: 10%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);;
+
+}
+
+.heroo{
+  margin-top: 120px;
+  text-decoration: solid;
+  font-size: xx-large;
+  font-weight: 1000px;
+}
+.heroo span{
+  color:rgb(7, 199, 199);
+}
+.heroo h2{
+  font-size:x-large;
+  font-weight: 500px;
+  margin-top: 20px;
+}
+.heroo h3{
+font-style:normal;
+font-size: medium;
+font-weight: 500;
+margin-top: 20px;
+  opacity:0.7
+}
+
+.btnn{
+  height:50px;
+  width:75px;
+  background-color: rgb(42, 196, 196);
+  color:#0f172a;
+  border-radius: 6%;
+
+}
+
+#about{
+  justify-content: center;
+  text-align: center;
+    text-decoration: solid;
+  font-size: larger;
+  font-weight: 900px;
+  margin:40px;
+}
+
+.aboutt ,
+.skilll,
+.pro{
+  background-color: rgb(255, 255, 255);
+  margin:80px;
+  /* margin-left: 90px;
+  margin-right: 90px; */
+  padding:30px;
+  border-radius: 22px;
+  text-align: start;
+  font-size: smaller;
+  transition: 0.5s;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.aboutt:hover ,
+.skilll:hover ,
+.pro:hover ,
+.contactt:hover{
+  transform: translateY(-15px);
+}
+
+body.dark .aboutt ,
+body.dark .skilll,
+body.dark .pro{
+  background:rgba(255,255,255,0.08);
+}
+
+.card-section h2{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+.card-section{
+  padding:80px 10%;
+}
+.skill{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:20px;
+}
+.skilll i{
+  font-size:60px;
+  color:#00bcd4;
+  margin-bottom:15px;
+  align-items: center;
+}
+.skilll{
+
+  text-align: center;
+  align-items: center;
+  margin: 20px;
+  font-size: 20px;
+}
+.project-section h2{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+.project-section{
+  padding:80px 10%;
+}
+.project{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,2fr));
+  gap:20px;
+
+}
+.pro{
+  margin:20px;
+  text-align: center;
+  align-items: center;
+}
+
+.contact-section h2{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+.contactt{
+  padding:30px;
+  border-radius: 22px;
+  text-align: start;
+  font-size: smaller;
+  margin:50px;
+  transition: 0.5s;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  background-color:rgb(255, 255, 255);
+
+}
+
+.contactt a{
+  text-decoration: none;
+}
+
+
+footer{
+  text-align:center;
+  padding:20px;
+}

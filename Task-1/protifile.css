@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#f5f5f5;
+  color:#111;
+  transition:0.4s ease;
+}
+
+/* Dark Mode */
+body.dark{
+  background:#0f172a;
+  color:white;
+}
+
+/* Header */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 10%;
+  position:sticky;
+  top:0;
+  backdrop-filter:blur(10px);
+  background:rgba(255,255,255,0.1);
+  z-index:1000;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:600;
+}
+
+nav a{
+  text-decoration:none;
+  color:inherit;
+  margin:0 15px;
+  font-weight:500;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#00bcd4;
+}
+
+/* Toggle Button */
+#theme-toggle{
+  border:none;
+  padding:12px;
+  border-radius:50%;
+  cursor:pointer;
+  font-size:18px;
+  background:#00bcd4;
+  color:white;
+  transition:0.3s;
+}
+
+#theme-toggle:hover{
+  transform:scale(1.1);
+}
+
+/* Hero */
+.hero{
+  min-height:100vh;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:50px 10%;
+  gap:40px;
+}
+
+.hero-text h1{
+  font-size:60px;
+}
+
+.hero-text span{
+  color:#00bcd4;
+}
+
+.hero-text h2{
+  margin:15px 0;
+}
+
+.hero-text p{
+  max-width:500px;
+  line-height:1.7;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 28px;
+  background:#00bcd4;
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:translateY(-5px);
+}
+
+/* Hero Image */
+.hero-image img{
+  width:350px;
+  border-radius:30px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Sections */
+.card-section{
+  padding:80px 10%;
+}
+
+.card-section h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:40px;
+}
+
+/* Cards */
+.card,
+.project-card,
+.skill-card{
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(10px);
+  padding:30px;
+  border-radius:20px;
+  transition:0.3s;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+body.dark .card,
+body.dark .project-card,
+body.dark .skill-card{
+  background:rgba(255,255,255,0.08);
+}
+
+.card:hover,
+.project-card:hover,
+.skill-card:hover{
+  transform:translateY(-10px);
+}
+
+/* Skills */
+.skills-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:20px;
+}
+
+.skill-card{
+  text-align:center;
+}
+
+.skill-card i{
+  font-size:50px;
+  color:#00bcd4;
+  margin-bottom:15px;
+}
+
+/* Projects */
+.projects-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:20px;
+}
+
+/* Responsive */
+@media(max-width:900px){
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-text h1{
+    font-size:45px;
+  }
+
+  nav{
+    display:none;
+  }
+
+  .hero-image img{
+    width:280px;
+  }
+
+}
